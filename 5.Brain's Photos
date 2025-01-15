@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n,m,b;
+    b=0;
+    cin>>n>>m;
+    char a[n][m];
+    for (int i = 0; i < n; i++)
+    {
+        for (int ii = 0; ii <m; ii++)
+        {
+            cin>>a[i][ii];
+        }
+ 
+    }
+    for (int i = 0; i < n; i++)
+    {
+        for (int ii = 0; ii <m; ii++)
+        {
+ 
+ 
+            if(a[i][ii]=='C' ||a[i][ii]=='M' ||a[i][ii]=='Y' ){
+                b++;
+            }
+ 
+ 
+ 
+        }
+ 
+    }
+    if(b==0){
+        cout<<"#Black&White"<<endl;
+    }
+    else{
+        cout<<"#Color"<<endl;
+    }
+ 
+ 
+ 
+ 
+ 
+    return 0;
+}
