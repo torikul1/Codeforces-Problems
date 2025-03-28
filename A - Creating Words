@@ -1,0 +1,29 @@
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a;
+    cin >> a;
+    string array1[a];
+    string array2[a];
+ 
+    for (int i = 0; i < a; i++)
+    {
+        string x, y;
+        cin >> x >> y;
+        char c, d, e;
+        c = x[0];
+        x[0] = y[0];
+        y[0] = c;
+        array1[i] = x;
+        array2[i] = y;
+    }
+ 
+    for (int i = 0; i < a; i++)
+    {
+        cout << array1[i] << " " << array2[i] << endl;
+    }
+ 
+    return 0;
+}
