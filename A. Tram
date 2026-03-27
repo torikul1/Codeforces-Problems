@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin >> n;
+    int array[n][2];
+
+    int max_capacity = 0;
+    int current_member = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 0; j < 2; j++)
+        {
+            cin >> array[i][j];
+        }
+
+        current_member = (current_member - array[i][0]) + array[i][1];
+
+        if (current_member > max_capacity)
+        {
+            max_capacity = current_member;
+        }
+        else
+        {
+            max_capacity = max_capacity;
+        }
+    }
+
+    cout << max_capacity;
+
+    return 0;
+}
